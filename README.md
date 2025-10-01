@@ -109,10 +109,10 @@ Add real-time camera input classification
 ## 🎯 Results
 
 ### Training Progress  
-![Training History](training_history.png)  
+![Training History](fruit_vegetable_outputs/training_history.png)  
 
 ### Confusion Matrix  
-![Confusion Matrix](confusion_matrix.png)  
+![Confusion Matrix](fruit_vegetable_outputs/confusion_matrix.png)  
 
 ---
 
