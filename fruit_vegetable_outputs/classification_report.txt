@@ -1,0 +1,42 @@
+               precision    recall  f1-score   support
+
+        apple       1.00      0.67      0.80         9
+       banana       1.00      0.78      0.88         9
+     beetroot       1.00      1.00      1.00        10
+  bell pepper       1.00      0.44      0.62         9
+      cabbage       1.00      1.00      1.00        10
+     capsicum       0.64      1.00      0.78         9
+       carrot       1.00      1.00      1.00         7
+  cauliflower       1.00      1.00      1.00         9
+chilli pepper       1.00      1.00      1.00         7
+         corn       1.00      0.40      0.57        10
+     cucumber       1.00      1.00      1.00        10
+     eggplant       1.00      1.00      1.00        10
+       garlic       1.00      1.00      1.00        10
+       ginger       1.00      1.00      1.00        10
+       grapes       1.00      1.00      1.00         8
+     jalepeno       1.00      1.00      1.00         9
+         kiwi       1.00      1.00      1.00        10
+        lemon       0.88      1.00      0.93         7
+      lettuce       1.00      1.00      1.00         9
+        mango       1.00      1.00      1.00        10
+        onion       1.00      1.00      1.00         9
+       orange       0.88      1.00      0.93         7
+      paprika       0.91      1.00      0.95        10
+         pear       0.83      1.00      0.91        10
+         peas       1.00      1.00      1.00         9
+    pineapple       0.91      1.00      0.95        10
+  pomegranate       1.00      1.00      1.00        10
+       potato       1.00      0.78      0.88         9
+      raddish       1.00      1.00      1.00         8
+    soy beans       1.00      1.00      1.00        10
+      spinach       1.00      1.00      1.00        10
+    sweetcorn       0.62      1.00      0.77        10
+  sweetpotato       1.00      1.00      1.00        10
+       tomato       0.91      1.00      0.95        10
+       turnip       1.00      1.00      1.00        10
+   watermelon       1.00      1.00      1.00        10
+
+     accuracy                           0.95       334
+    macro avg       0.96      0.95      0.94       334
+ weighted avg       0.96      0.95      0.94       334
