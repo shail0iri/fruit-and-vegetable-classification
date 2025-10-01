@@ -1,0 +1,16 @@
+📊 Dataset
+Dataset Information
+Total Size: ~3.1 GB
+
+Number of Classes: 36 different fruits and vegetables
+
+Image Format: JPEG
+
+Resolution: Various sizes (resized to 224×224 for training)
+
+📥 How to Get the Dataset
+Option 1: Download from Original Source
+bash
+# The dataset is too large for GitHub. Please download from:
+# [https://www.kaggle.com/code/abdelrahman16/fruit-and-vegetable-classification/input]
+# Example: Kaggle, Google Drive, Academic repository, etc
