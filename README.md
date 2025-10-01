@@ -79,6 +79,7 @@ from predict import predict_image
 class_name, confidence = predict_image("path/to/your/image.jpg")
 print(f"Predicted: {class_name} with {confidence:.2%} confidence")
 
+---
 🔧 Model Training
 
 Training Parameters:
