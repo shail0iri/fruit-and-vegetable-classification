@@ -59,6 +59,53 @@ The dataset contains images of **36 classes** of fruits and vegetables, split in
 
 ---
 
+🔧 Model Training
+
+Training Parameters:
+Batch Size: 32
+Epochs: 5 (with early stopping)
+Early Stopping Patience: 2 epochs
+Learning Rate: 0.001 (Adam default)
+
+📊 Evaluation Metrics
+
+This project provides detailed evaluation including:
+
+Accuracy scores
+Classification report
+Confusion matrix (normalized & count-based)
+Per-class accuracy
+Misclassification analysis
+
+🎨 Visualization Features
+
+Sample Images from dataset
+Training Curves (Accuracy & Loss over epochs)
+Confusion Matrix (heatmap)
+Grad-CAM heatmaps for model explainability
+Misclassification examples
+
+🤖 Model Interpretation
+
+The Grad-CAM implementation helps visualize:
+Which image regions influenced predictions
+How the model makes decisions
+Potential biases in classification
+
+📝 Key Findings
+
+Model achieves high accuracy across most classes
+Some confusion between visually similar items
+Data augmentation significantly improves generalization
+Transfer learning provides a strong baseline
+
+🚀 Future Improvements
+
+Try other base models (EfficientNet, ResNet, etc.)
+More advanced data augmentation strategies
+Ensemble methods for better accuracy
+Deploy as a Streamlit or FastAPI web app
+Add real-time camera input classification
 ## 🎯 Results
 
 ### Training Progress  
@@ -79,73 +126,3 @@ from predict import predict_image
 class_name, confidence = predict_image("path/to/your/image.jpg")
 print(f"Predicted: {class_name} with {confidence:.2%} confidence")
 
----
-🔧 Model Training
-
-Training Parameters:
-
-Batch Size: 32
-
-Epochs: 5 (with early stopping)
-
-Early Stopping Patience: 2 epochs
-
-Learning Rate: 0.001 (Adam default)
-
-📊 Evaluation Metrics
-
-This project provides detailed evaluation including:
-
-Accuracy scores
-
-Classification report
-
-Confusion matrix (normalized & count-based)
-
-Per-class accuracy
-
-Misclassification analysis
-
-🎨 Visualization Features
-
-Sample Images from dataset
-
-Training Curves (Accuracy & Loss over epochs)
-
-Confusion Matrix (heatmap)
-
-Grad-CAM heatmaps for model explainability
-
-Misclassification examples
-
-🤖 Model Interpretation
-
-The Grad-CAM implementation helps visualize:
-
-Which image regions influenced predictions
-
-How the model makes decisions
-
-Potential biases in classification
-
-📝 Key Findings
-
-Model achieves high accuracy across most classes
-
-Some confusion between visually similar items
-
-Data augmentation significantly improves generalization
-
-Transfer learning provides a strong baseline
-
-🚀 Future Improvements
-
-Try other base models (EfficientNet, ResNet, etc.)
-
-More advanced data augmentation strategies
-
-Ensemble methods for better accuracy
-
-Deploy as a Streamlit or FastAPI web app
-
-Add real-time camera input classification
