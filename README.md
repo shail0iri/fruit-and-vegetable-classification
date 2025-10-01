@@ -1,144 +1,150 @@
-Fruit and Vegetable Classification System
-A deep learning-based image classification system that can identify 36 different types of fruits and vegetables with high accuracy using TensorFlow and transfer learning.
+# 🍎🥦 Fruit and Vegetable Classification System
 
-📋 Project Overview
-This project implements a convolutional neural network (CNN) using MobileNetV2 as the base model for classifying images of fruits and vegetables. The model achieves high accuracy in distinguishing between 36 different classes of produce items.
+A deep learning-based image classification system that can identify **36 different types of fruits and vegetables** with high accuracy using **TensorFlow** and **Transfer Learning**.
 
-🚀 Features
-Transfer Learning: Utilizes pre-trained MobileNetV2 model for feature extraction
+---
 
-Data Augmentation: Implements real-time data augmentation to improve model generalization
+## 📋 Project Overview
+This project implements a **Convolutional Neural Network (CNN)** using **MobileNetV2** as the base model for classifying images of fruits and vegetables.  
+The model achieves **high accuracy** in distinguishing between 36 different classes of produce items.
 
-Grad-CAM Visualization: Includes explainable AI features to understand model predictions
+---
 
-Comprehensive Evaluation: Provides detailed performance metrics and confusion analysis
+## 🚀 Features
+- **Transfer Learning** – Uses pre-trained **MobileNetV2** for feature extraction  
+- **Data Augmentation** – Real-time augmentation improves generalization  
+- **Grad-CAM Visualization** – Explainable AI to understand predictions  
+- **Comprehensive Evaluation** – Accuracy, confusion matrix, per-class metrics  
+- **Easy Deployment** – Includes prediction script for new images  
 
-Easy Deployment: Includes prediction script for classifying new images
+---
 
-🛠️ Technical Details
-Model Architecture
-Base Model: MobileNetV2 (pre-trained on ImageNet)
+## 🛠️ Technical Details
 
-Custom Layers:
+### Model Architecture
+- **Base Model:** MobileNetV2 (pre-trained on ImageNet)  
+- **Custom Layers:**  
+  - Global Average Pooling  
+  - Dense (128 units, ReLU)  
+  - Dense (128 units, ReLU)  
+  - Output Layer: 36 units, Softmax  
 
-Global Average Pooling
+- **Input Size:** 224×224×3  
+- **Optimizer:** Adam  
+- **Loss Function:** Categorical Crossentropy  
 
-Dense (128 units, ReLU)
+### Data Augmentation
+- Rotation: ±30°  
+- Zoom: ±15%  
+- Width/Height Shift: ±20%  
+- Shear: ±15%  
+- Horizontal Flip: ✅  
 
-Dense (128 units, ReLU)
+---
 
-Output (36 units, Softmax)
+## 📊 Dataset
+The dataset contains images of **36 classes** of fruits and vegetables, split into:
+- **Training Set** – for learning  
+- **Validation Set** – for tuning & early stopping  
+- **Test Set** – for final evaluation  
 
-Input Size: 224×224×3
+📥 Dataset Link: [Download from Kaggle](https://www.kaggle.com/code/abdelrahman16/fruit-and-vegetable-classification/input)  
 
-Optimizer: Adam
+---
 
-Loss Function: Categorical Crossentropy
+## 📈 Performance
+- **Test Accuracy:** *[Add your accuracy here]* %  
+- **Training Time:** ~X minutes/epoch on *[Your Hardware]*  
+- **Model Size:** *[Size of saved model]*  
 
-Data Augmentation
-Rotation: ±30 degrees
+---
 
-Zoom: ±15%
+## 🎯 Results
 
-Width/Height Shift: ±20%
+### Training Progress  
+![Training History](training_history.png)  
 
-Shear: ±15%
+### Confusion Matrix  
+![Confusion Matrix](confusion_matrix.png)  
 
-Horizontal Flip: Enabled
+---
 
-📊 Dataset
-The dataset contains images of 36 different fruits and vegetables organized into:
+## 🔍 Making Predictions
+You can use the provided script to classify new images:
 
-Training set: Primary training data
-
-Validation set: Model tuning and early stopping
-
-Test set: Final evaluation
-📈 Performance
-Test Accuracy: [Add your accuracy here]%
-
-Training Time: ~X minutes/epoch on [Your Hardware]
-
-Model Size: [Size of saved model]
-
-🎯 Results
-Training Progress
-https://training_history.png
-
-Confusion Matrix
-https://confusion_matrix.png
-
-2. Making Predictions
-Use the provided prediction script:
-
-python
+```python
 from predict import predict_image
 
 # Classify a new image
-class_name, confidence = predict_image('path/to/your/image.jpg')
+class_name, confidence = predict_image("path/to/your/image.jpg")
 print(f"Predicted: {class_name} with {confidence:.2%} confidence")
 
 🔧 Model Training
-Key training parameters:
+
+Training Parameters:
 
 Batch Size: 32
 
 Epochs: 5 (with early stopping)
 
-Early Stopping: Patience of 2 epochs
+Early Stopping Patience: 2 epochs
 
-Learning Rate: Default Adam (0.001)
+Learning Rate: 0.001 (Adam default)
 
 📊 Evaluation Metrics
-The project provides comprehensive evaluation including:
+
+This project provides detailed evaluation including:
 
 Accuracy scores
 
 Classification report
 
-Confusion matrix
+Confusion matrix (normalized & count-based)
 
 Per-class accuracy
 
 Misclassification analysis
 
 🎨 Visualization Features
-Sample Images: Display representative images from each class
 
-Training Curves: Accuracy and loss over epochs
+Sample Images from dataset
 
-Confusion Matrix: Normalized and count-based versions
+Training Curves (Accuracy & Loss over epochs)
 
-Grad-CAM: Heatmaps showing model attention
+Confusion Matrix (heatmap)
 
-Misclassification Analysis: Examples of wrong predictions
+Grad-CAM heatmaps for model explainability
+
+Misclassification examples
 
 🤖 Model Interpretation
-The Grad-CAM implementation helps understand:
 
-Which image regions influence predictions
+The Grad-CAM implementation helps visualize:
 
-Model decision-making process
+Which image regions influenced predictions
 
-Potential biases or focus areas
+How the model makes decisions
+
+Potential biases in classification
 
 📝 Key Findings
-The model achieves high accuracy on most classes
 
-Some confusion occurs between visually similar items
+Model achieves high accuracy across most classes
+
+Some confusion between visually similar items
 
 Data augmentation significantly improves generalization
 
-Transfer learning provides strong baseline performance
+Transfer learning provides a strong baseline
 
 🚀 Future Improvements
-Experiment with other base models (EfficientNet, ResNet)
 
-Implement more sophisticated data augmentation
+Try other base models (EfficientNet, ResNet, etc.)
 
-Add model ensemble techniques
+More advanced data augmentation strategies
 
-Deploy as web application
+Ensemble methods for better accuracy
 
-Add support for real-time classification
+Deploy as a Streamlit or FastAPI web app
 
+Add real-time camera input classification
