@@ -8,7 +8,7 @@ Resolution: Resized to 224×224 for training
 📥 How to Get the Dataset
 -------------------------
 1. Download from Original Source:  
-   https://www.kaggle.com/code/abdelrahman16/fruit-and-vegetable-classification/input  
+   [Dataset](https://www.kaggle.com/code/abdelrahman16/fruit-and-vegetable-classification/input)  
 
 2. Manual Setup:  
    - Download the dataset from the original source  
