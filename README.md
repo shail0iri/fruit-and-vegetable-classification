@@ -1,16 +1,16 @@
-# 🍎🥦 Fruit and Vegetable Classification System
+#  Fruit and Vegetable Classification System
 
 A deep learning-based image classification system that can identify **36 different types of fruits and vegetables** with high accuracy using **TensorFlow** and **Transfer Learning**.
 
 ---
 
-## 📋 Project Overview
+##  Project Overview
 This project implements a **Convolutional Neural Network (CNN)** using **MobileNetV2** as the base model for classifying images of fruits and vegetables.  
 The model achieves **high accuracy** in distinguishing between 36 different classes of produce items.
 
 ---
 
-## 🚀 Features
+##  Features
 - **Transfer Learning** – Uses pre-trained **MobileNetV2** for feature extraction  
 - **Data Augmentation** – Real-time augmentation improves generalization  
 - **Grad-CAM Visualization** – Explainable AI to understand predictions  
@@ -19,7 +19,7 @@ The model achieves **high accuracy** in distinguishing between 36 different clas
 
 ---
 
-## 🛠️ Technical Details
+##  Technical Details
 
 ### Model Architecture
 - **Base Model:** MobileNetV2 (pre-trained on ImageNet)  
@@ -42,24 +42,24 @@ The model achieves **high accuracy** in distinguishing between 36 different clas
 
 ---
 
-## 📊 Dataset
+##  Dataset
 The dataset contains images of **36 classes** of fruits and vegetables, split into:
 - **Training Set** – for learning  
 - **Validation Set** – for tuning & early stopping  
 - **Test Set** – for final evaluation  
 
-📥 Dataset Link: [Download from Kaggle](https://www.kaggle.com/code/abdelrahman16/fruit-and-vegetable-classification/input)  
+ Dataset Link: [Download from Kaggle](https://www.kaggle.com/code/abdelrahman16/fruit-and-vegetable-classification/input)  
 
 ---
 
-## 📈 Performance
+##  Performance
 - **Test Accuracy:** *[Add your accuracy here]* %  
 - **Training Time:** ~X minutes/epoch on *[Your Hardware]*  
 - **Model Size:** *[Size of saved model]*  
 
 ---
 
-🔧 Model Training
+Model Training
 
 Training Parameters:
 Batch Size: 32
@@ -67,7 +67,7 @@ Epochs: 5 (with early stopping)
 Early Stopping Patience: 2 epochs
 Learning Rate: 0.001 (Adam default)
 
-📊 Evaluation Metrics
+Evaluation Metrics
 
 This project provides detailed evaluation including:
 
@@ -77,7 +77,7 @@ Confusion matrix (normalized & count-based)
 Per-class accuracy
 Misclassification analysis
 
-🎨 Visualization Features
+Visualization Features
 
 Sample Images from dataset
 Training Curves (Accuracy & Loss over epochs)
@@ -85,28 +85,28 @@ Confusion Matrix (heatmap)
 Grad-CAM heatmaps for model explainability
 Misclassification examples
 
-🤖 Model Interpretation
+Model Interpretation
 
 The Grad-CAM implementation helps visualize:
 Which image regions influenced predictions
 How the model makes decisions
 Potential biases in classification
 
-📝 Key Findings
+Key Findings
 
 Model achieves high accuracy across most classes
 Some confusion between visually similar items
 Data augmentation significantly improves generalization
 Transfer learning provides a strong baseline
 
-🚀 Future Improvements
+Future Improvements
 
 Try other base models (EfficientNet, ResNet, etc.)
 More advanced data augmentation strategies
 Ensemble methods for better accuracy
 Deploy as a Streamlit or FastAPI web app
 Add real-time camera input classification
-## 🎯 Results
+## Results
 
 ### Training Progress  
 ![Training History](fruit_vegetable_outputs/training_history.png)  
